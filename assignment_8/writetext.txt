@@ -1,0 +1,13 @@
+character - b have frequency - 3
+character - c have frequency - 6
+character - d have frequency - 3
+character - e have frequency - 2
+character - f have frequency - 1
+character - i have frequency - 1
+character - j have frequency - 1
+character - k have frequency - 1
+character - m have frequency - 1
+character - n have frequency - 2
+character - o have frequency - 1
+character - u have frequency - 1
+character - v have frequency - 1
