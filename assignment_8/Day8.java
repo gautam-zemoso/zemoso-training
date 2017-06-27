@@ -28,8 +28,9 @@ public class Day8{
 		//Iterator<Character,Integer> i = mp.iterator();
 		for (Map.Entry<Character, Integer> k : mp.entrySet())
 		{
-			if(k.getKey() <= 'z' && k.getKey()>= 'a')
+			//if(k.getKey() <= 'z' && k.getKey()>= 'a')
 		   fw.write("character - " +k.getKey() + " have frequency - " + k.getValue()+ "\n");
+			//count all characters including space and line also
 		}
 		fw.close();
 	}
