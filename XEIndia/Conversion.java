@@ -2,9 +2,9 @@
 import java.util.* ;
 public class Conversion implements Subject{
 	
-	private double usd;
-	private double gbp;
-	private double euro ;
+	private double usd = 65.00;
+	private double gbp = 80.00;
+	private double euro = 69.00;
 	private ArrayList<Observer> observers ;
 	public Conversion(){
 		observers = new ArrayList<Observer>();
