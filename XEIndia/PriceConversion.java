@@ -1,6 +1,6 @@
 public class PriceConversion {
 	public static void main(String [] args){
-		Conversion conversion = new Conversion() ;
+		Conversion conversion = new Conversion(65.00,80.00,69.00) ;
 		StackObserver ob = new StackObserver(conversion,1000) ;
 		ob.currency(2000);
 		conversion.setUSD(82.00) ;

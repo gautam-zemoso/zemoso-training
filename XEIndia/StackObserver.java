@@ -2,19 +2,19 @@
 import java.util.* ;
 public class StackObserver implements Observer{
 
-	private double usd = 65.00;
-	private double gbp = 80.00;
-	private double euro = 69.00;
+	private double usd ;
+	private double gbp ;
+	private double euro ;
 	private double inr ;
 	public static int obID = 0 ;
 	private int observerID ;
-	private Subject Conversion ;
-	public StackObserver(Subject Conversion,double inr){
-		this.Conversion = Conversion ;
+	private Subject conversion ;
+	public StackObserver(Subject conversion,double inr){
+		this.conversion = conversion ;
 		this.inr = inr ;
 		this.observerID = ++obID ;
-		Conversion.register(this);
-		print(); 
+		conversion.register(this);
+		conversion.notifyObserver();
 	}
 	public void currency(double inr){
 		this.inr = inr ;

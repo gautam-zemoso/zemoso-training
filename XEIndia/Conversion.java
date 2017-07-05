@@ -2,16 +2,21 @@
 import java.util.* ;
 public class Conversion implements Subject{
 	
-	private double usd = 65.00;
-	private double gbp = 80.00;
-	private double euro = 69.00;
+	private double usd ;
+	private double gbp ;
+	private double euro ;
 	private ArrayList<Observer> observers ;
-	public Conversion(){
+	public Conversion(double usd , double gbp,double euro){
 		observers = new ArrayList<Observer>();
+		this.usd = usd ;
+		this.euro = euro ;
+		this.gbp = gbp ;
+
 	}
 	@Override 
 	public void register(Observer o){
 		observers.add(o);
+
 	}
 	@Override
 	public void unregister(Observer o){
@@ -25,7 +30,6 @@ public class Conversion implements Subject{
 			o.update(usd,gbp,euro);
 		}
 	}
-
 	public void setUSD(double usd){
 		this.usd = usd ;
 		notifyObserver();
