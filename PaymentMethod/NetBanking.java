@@ -1,7 +1,8 @@
 public class NetBanking extends PayMethod{
-	public NetBanking(){
+	//private double amount;
+	public NetBanking(double amount){
 		setName("Net Banking ");
-		setTxn(101);
+		setTxn(amount);
 	}
 	
 }

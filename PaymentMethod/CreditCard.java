@@ -1,7 +1,8 @@
 public class CreditCard extends PayMethod{
-	public CreditCard(){
+	//private double amount;
+	public CreditCard(double amount){
 		setName("Credit Card");
-		setTxn(125);
+		setTxn(amount);
 	}
 	
 }

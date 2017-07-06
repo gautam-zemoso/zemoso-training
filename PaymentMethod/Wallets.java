@@ -1,7 +1,8 @@
 public class Wallets extends PayMethod{
-	public Wallets(){
+	//private double amount;
+	public Wallets(double amount){
 		setName("Wallets");
-		setTxn(100);
+		setTxn(amount);
 	}
 	
 }

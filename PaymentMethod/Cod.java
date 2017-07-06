@@ -1,7 +1,8 @@
 public class Cod extends PayMethod{
-	public Cod(){
+	// private double amount;
+	public Cod(double amount){
 		setName("Cash on Delivery");
-		setTxn(111);
+		setTxn(amount);
 	}
 	
 }

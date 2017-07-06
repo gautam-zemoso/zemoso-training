@@ -8,11 +8,13 @@ public class PayIndia{
 			"NetBanking \nWallet\nCOD\n");
 		String str="";
 		str = sc.next();
-		paymethod = pmf.getMethod(str);
-		properties(paymethod);
+		 System.out.print("Enter Amount for Txn\t");
+		double amount = sc.nextInt();
+		paymethod = pmf.getMethod(str,amount);
+		payment(paymethod);
 
 	}
-	public static void  properties(PayMethod paymethod){
+	public static void  payment(PayMethod paymethod){
 		paymethod.currentMethod();
 		paymethod.txnAmount();
 	}

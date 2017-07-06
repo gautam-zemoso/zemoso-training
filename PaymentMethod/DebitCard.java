@@ -1,7 +1,8 @@
 public class DebitCard extends PayMethod{
-	public DebitCard(){
+	//private double amount;
+	public DebitCard(double amount){
 		setName("Debit Card");
-		setTxn(100);
+		setTxn(amount);
 	}
 	
 }
