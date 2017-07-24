@@ -13,6 +13,9 @@ public abstract class City{
 		cityLocation.put("F",56.00);
 		cityLocation.put("E",99.00);
 	}
+	public String getName(){
+		return cityName;
+	}
 	public double getDist(String source ,String destination){
 		double a = cityLocation.get(source);
 		double b = cityLocation.get(destination);
@@ -21,12 +24,20 @@ public abstract class City{
 	public  void setLocaionPair(String source ,String destination){
 		sourceDestinationpair.put(source,destination);
 	}
+	public void showSourceDestinatonPair(){
+		for (Map.Entry entry : sourceDestinationpair.entrySet()) {
+    		System.out.println("From Source "+entry.getKey() + " to Destination " + entry.getValue());					
+			}
+		}	
+	
 	public Map<String ,String> getSDpair(){
 		return sourceDestinationpair ;
 	}
-	public ArrayList<String> getCabList(){
+	public ArrayList<String> getCabList
+	(){
 		return cabList;
 	}
+	
 	public void showName(){
 		System.out.println("City Name - "+cityName);
 	}

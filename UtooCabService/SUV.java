@@ -1,11 +1,11 @@
 public class SUV extends Cab{
 	public SUV(){
-		carName = "SUV" ;
-		carRate = 12.00 ;
+		cabName = "SUV" ;
+		cabRate = 12.00 ;
 	}
 	public SUV(double rate)
 	{
-		carName = "SUV" ;
-		carRate = rate ;
+		cabName = "SUV" ;
+		cabRate = rate ;
 	}
 }

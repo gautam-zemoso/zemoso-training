@@ -1,11 +1,14 @@
 public abstract class Cab{
-	protected String carName ;
-	protected double carRate ;
+	protected String cabName ;
+	protected double cabRate ;
 	public void showRate(){
-		System.out.print("Car type "+carName+" have base rate (/Km) is "+carRate+"\n");
+		System.out.print("Car type "+cabName+" have base rate (/Km) is "+cabRate+"\n");
 	}
 	public double getRate(){
-		return carRate ;
+		return cabRate ;
 	}
-
+	public String getName(){
+		return cabName ;
+	}
+	
 }
