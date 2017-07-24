@@ -2,6 +2,7 @@ import java.util.*;
 
 public class UtooCab{
 	private static CityFactory cf = new CityFactory();
+	private static CabFactory cityName;
 	public static  void showRecord(ArrayList<BookingRecord> bookingRecord){
 		for(BookingRecord record : bookingRecord){
 			System.out.println("Customer Name " + record.getCustomerName() +
@@ -14,6 +15,9 @@ public class UtooCab{
 	public static void main(String [] args){
 		ArrayList<BookingRecord> bookingRecord = new ArrayList<BookingRecord>();
 		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter City");
+		String name = sc.next();
+		cityName  = cf.getCity(name);
 		char input;
 		while(true){
 			System.out.println("write a for booking , b for see all book record , c for exit");
@@ -33,9 +37,8 @@ public class UtooCab{
 	}
 	public static void booking(ArrayList<BookingRecord> bookingRecord){
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter City");
-		String name = sc.next();
-		CabFactory cityName  = cf.getCity(name);
+		
+		System.out.println("Avilable source-destination pair");
 		City city = cityName.city ;
 		city.showSourceDestinatonPair();
 		System.out.println("Enter source-destination pair");
